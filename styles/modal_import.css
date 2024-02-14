@@ -1,0 +1,77 @@
+.modal_import_cronog{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(68, 66, 66, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 998;
+    display: none;
+    flex-shrink: 0;
+    left: 0;
+    top: 0;
+}
+
+.modal_import_cronog .modal_import_cronog-import{
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(234, 244, 252);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 8px 1px 92px 8px rgba(0,0,0,0.48);
+-webkit-box-shadow: 8px 1px 92px 8px rgba(0,0,0,0.48);
+-moz-box-shadow: 8px 1px 92px 8px rgba(0,0,0,0.48);
+}
+
+.modal_import_cronog .modal_import_cronog-import div{
+    width: 100%;
+}
+
+.modal_import_cronog .modal_import_cronog-import div span{
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.modal_import_cronog .modal_import_cronog-import div input{
+    width: 90%;
+    padding: 10px;
+}
+
+.modal_import_cronog .modal_import_cronog-import .modal_import_cronog-import-close{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.modal_import_cronog .modal_import_cronog-import .modal_import_cronog-import-close button{
+    font-size: 15px;
+    width: 120px;
+    background-color: #cf9b75;
+    margin:  0 auto;
+}
+
+.modal_import_cronog .modal_import_cronog-import p{
+    color: #c9814d;
+    cursor: grab;
+}
+
+.modal_import_cronog .modal_import_cronog-import button{
+    padding: 6px;
+    width: 160px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    /* background-color: #c575cf; */
+    background-color: #75cf7c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal_import_cronog .modal_import_cronog-import button:hover{
+    /* background-color: #75cf7c; */
+    background-color: #c575cf;
+}

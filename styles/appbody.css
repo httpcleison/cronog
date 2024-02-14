@@ -1,0 +1,103 @@
+/* .app-body{
+    background-color: var(--var_divs_color);
+    width: 75vw;
+    height: 100vh;
+    border-radius: 12px;
+    //position: fixed;
+    overflow: visible;
+}
+
+.app-body .app-body-lists{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    overflow: visible;
+}  */
+
+.app-body {
+    background-color: var(--var_divs_color);
+    width: 75vw;
+    height: 100vh;
+    border-radius: 12px;
+    overflow: auto; /* Alterado para overflow: auto para adicionar barras de rolagem quando necessário */
+}
+
+.app-body .app-body-lists {
+    width: 100%; /* Define a largura para 100% do contêiner pai */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    overflow: visible;
+}
+
+
+.week {
+    /* margin-bottom: 20px; */
+    margin-top: 10px;
+}
+.week-title {
+    background-color: #c575cf;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.week-title span:hover{
+    color: var(--var_txt_color);
+}
+.content {
+    display: none;
+    padding-left: 20px;
+}
+.material-title {
+    background-color: #75cf7c;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.material-title span:hover{
+    color: var(--var_txt_color);
+}
+
+.subjects {
+    display: none;
+    padding-left: 25px;
+}
+
+.subjects ul li{
+    margin-top: 10px;
+    list-style: square;
+    padding: 2px;
+    font-size: 1.1rem;
+}
+
+.subjects ul .completed{
+    color: red;
+}
+
+.week-title,
+.material-title {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

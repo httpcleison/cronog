@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CronoStudy</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/toast.css">
+    <link rel="stylesheet" href="./styles/appbody.css">
+    <link rel="stylesheet" href="./styles/appmenu.css">
+    <link rel="stylesheet" href="./styles/modal_login.css">
+    <link rel="stylesheet" href="./styles/modal_import.css">
+    <link rel="stylesheet" href="./styles/medias.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+
+</head>
+<body>
+
+    <div class="modal_import_cronog">
+        <div class="modal_import_cronog-import">
+            <div class="modal_import_cronog-import-close"><button class="modal_import_cronog-import-close-close">cancelar</button></div>
+            <div><span class="fas fa-wrench"></span> <input class="txtBox_cod_import" type="text" placeholder="Codigo de importação"></div>
+            <p>*ATENÇÂO!!! com isso seu cronograma atual será perdido!</p>
+            <button class="modal_import_cronog-import-import">Importar cronograma</button>
+        </div>
+    </div>
+
+    <div class="modal_login">
+        <div class="modal_login-auth">
+            <div><span class="fas fa-wrench"></span><input class="txtBox_cod" type="text" placeholder="Codigo. Ex: 909UEf"></div>
+            <div><span class="fas fa-user"></span><input class="txtBox_user" type="text" placeholder="Seu nome de usuario"></div>
+            <button>Login</button>
+        </div>
+    </div>
+
+    <div class="toast"></div>
+
+    <div class="container">
+        <div class="app-menu-mobile">
+            <button><span class="fas fa-bars"></span></button>
+        </div>
+
+        <div class="app-menu">
+            <div class="app-menu-menu">
+                <div class="app-menu-menu-txts">
+                    <span><span class="fas fa-user-circle"></span> Conta</span>
+                    <span class="newWeekButton"><span class="fas fa-plus-circle"></span> Adicionar semana</span>
+                </div>
+                <div class="app-menu-menu-comunity">
+                    <span>Visite agora nossa comunidade!</span>
+                    <span>Obtenha cronogramas prontos!</span>
+                    <button><span class="fas fa-user"></span> Comunidade</button>
+                </div>
+                <div class="app-menu-menu-cronog">
+                    <span class="saveCronog"><span class="fas fa-save"></span> Salvar Cronograma</span>
+                    <span class="downloadCronog"><span class="fas fa-download"></span> Exportar cronograma</span>
+                    <span class="importCronog"><span class="fas fa-upload"></span> Importar cronograma</span>
+                    <span><span class="fas fa-share-square"></span> Compartilhar na comunidade</span>
+                </div>
+                <div class="app-menu-menu-copy">
+                    <span>&copy;Copyright By Cleison Sousa</span>
+                </div>
+            </div>
+        </div>
+        <div class="app-body">
+            <div class="app-body-lists">
+            <!-- <div class="week">
+                <div class="week-title">Semana 01<span class="fas fa-plus-circle"></span></div>
+                <div class="content">
+                    <div class="material">
+                        <div class="material-title">Português<span class="fas fa-plus-circle"></span></div>
+                        <div class="subjects">
+                            <ul>
+                                <li>Gramática</li>
+                                <li>Redação</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="material">
+                        <div class="material-title">Matemática<span class="fas fa-plus-circle"></span></div>
+                        <div class="subjects">
+                            <ul>
+                                <li>Álgebra</li>
+                                <li>Geometria</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- <div class="week">
+                <div class="week-title">Semana 02<span class="fas fa-plus-circle"></span></div>
+                <div class="content">
+                    <div class="material">
+                        <div class="material-title">Inglês<span class="fas fa-plus-circle"></span></div>
+                        <div class="subjects">
+                            <ul>
+                                <li>Reading</li>
+                                <li>Writing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="material">
+                        <div class="material-title">História<span class="fas fa-plus-circle"></span></div>
+                        <div class="subjects">
+                            <ul>
+                                <li>Idade Média</li>
+                                <li>Revolução Francesa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="./scripts/toast.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script type="module" src="./scripts/firebase.js"></script>
+</body>
+</html>

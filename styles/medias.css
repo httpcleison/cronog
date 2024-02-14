@@ -1,0 +1,74 @@
+@media (min-width: 900px) {
+    .app-menu{
+        display: block;
+    }
+
+    .container .app-menu-mobile{
+        display: none;
+    }
+
+    body .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 820px) {
+    .app-menu{
+        flex-shrink: 0;
+        position: fixed;
+        left: 0; /* Alinha no lado esquerdo */
+        top: 0; /* Alinha no topo */
+        bottom: 0;
+        box-shadow: 6px 5px 63px -9px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 5px 63px -9px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 5px 63px -9px rgba(0,0,0,0.75);
+        cursor: pointer;
+        width: 40vw;
+        display: none;
+    }
+
+    .container .app-menu-mobile{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    body .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .app-menu{
+        width: 50vw;
+    }
+
+    .app-menu .app-menu-menu .app-menu-menu-comunity{
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    .container .app-body .app-body-lists .week-title{
+        padding: 8px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+
+    .container .app-body .app-body-lists .material-title{
+        padding: 4px;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    
+    .container .app-body .app-body-lists .week .content .material .subjects ul li{
+        font-size: 1rem;
+    }
+}

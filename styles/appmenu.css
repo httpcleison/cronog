@@ -1,0 +1,102 @@
+.app-menu{
+    background-color: var(--var_divs_color);
+    width: 20vw;
+    height: 100vh;
+    border-radius: 12px;
+    /* position: fixed; */
+    display: block;
+}
+
+.app-menu .app-menu-menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 15px;
+    /* justify-content: space-between; */
+    /* overflow: auto; */
+    overflow: visible;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-txts{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-txts span:nth-child(1){
+    margin-top: 10px;
+}
+
+
+.app-menu .app-menu-menu .app-menu-menu-txts span:hover{
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-comunity{
+    margin-left: 10px;
+    /* margin-top: 10px; */
+}
+
+.app-menu .app-menu-menu .app-menu-menu-comunity span:nth-child(1){
+    font-weight: 700;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-comunity span:nth-child(2){
+    font-size: 1rem;
+    margin: 10px 0px 10px 0pxs;
+}
+
+
+.app-menu .app-menu-menu .app-menu-menu-comunity button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #75cf7c;
+    /* color: #c575cf; */
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-comunity button:hover{
+    /* background: transparent; */
+    background-color: #c575cf;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-comunity button span{
+    font-weight: 700;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-cronog{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-cronog span{
+    margin-left: 10px;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-cronog span:hover{
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.app-menu .app-menu-menu .app-menu-menu-cronog hr{
+    color: #c575cf;
+}
+
+.app-menu-menu-copy{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
